@@ -1,0 +1,63 @@
+.toolbar p {
+    margin: 0;
+}
+
+.toolbar {
+    padding: 1%;
+    background-color: #EEEEEF;
+    box-shadow: 0 4px 10px #d2d2d2;
+}
+
+#custom-search-input {
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 1%;
+    border: solid 1px #E4E4E4;
+    border-radius: 100px;
+    background-color: white;
+}
+
+#custom-search-input input{
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    font-size: 1.3em;
+}
+
+#custom-search-input button{
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+}
+
+#custom-search-input button:hover {
+    color: black;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 20px;
+}
+
+button {
+    display: inline;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    font-size: 1.3em;
+}
+.menu {
+    height: 100%;
+}
+
+.underline {
+    height: 0.1em;
+    width: 0;
+    margin: 0 0 0 -15px;
+    transform: translate(0px, -0.1em);
+    background: #666666;
+    border: none;
+    transition: .3s ease-in-out;
+}

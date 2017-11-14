@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="admin_container">
+        {% include "default/admin_toolbar.html.twig" %}
+        {% include "default/song_list.html.twig" %}
+
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/linear_song_item.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/song_list.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/admin_toolbar.css') }}"/>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/admin_toolbar_handler.js') }}"
+{% endblock %}
