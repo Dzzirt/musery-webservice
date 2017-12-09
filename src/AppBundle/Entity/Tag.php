@@ -105,6 +105,23 @@ class Tag
         return $this->name;
     }
 
+    /**
+     * @return int
+     */
+    public function getSearchCount(): int
+    {
+        return $this->searchCount;
+    }
+
+    /**
+     * @param int $searchCount
+     */
+    public function setSearchCount(int $searchCount)
+    {
+        $this->searchCount = $searchCount;
+    }
+
+
 
 }
 

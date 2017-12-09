@@ -4,17 +4,22 @@
     <div class="admin_container">
         {% include "default/admin_toolbar.html.twig" %}
         {% include "default/song_list.html.twig" %}
+        {% include "default/new_song_modal.html.twig" %}
 
     </div>
 {% endblock %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/linear_song_item.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/song_list.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/admin_toolbar.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/new_song_item.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/new_song_modal.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/widget_rate_me.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}"/>
+
 {% endblock %}
 
 {% block javascripts %}
-    <script src="{{ asset('js/admin_toolbar_handler.js') }}"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.5/js/fileinput.min.js"></script>
 {% endblock %}

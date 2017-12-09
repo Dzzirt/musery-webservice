@@ -1,20 +1,16 @@
+img {
+    width: inherit;
+}
 .song_item {
-    padding: 2em;
+    margin-bottom: 1em;
 }
 
-.logo {
-    width: 4em;
-    height: 4em;
-    background-image: url("../song_logo_sample.jpg");
-    background-position: center center;
-    background-size: cover;
-    border-radius: 8px;
-    display: inline-block;
-    vertical-align: bottom;
+.info p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.info {
-    margin-left: 0.5em;
-    font-size: 1.4em;
-    display: inline-block;
+.image {
+    text-align: center;
 }

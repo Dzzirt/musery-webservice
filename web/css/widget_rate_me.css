@@ -1,0 +1,19 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+    margin: 5px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > label {
+    color: #ddd;
+}

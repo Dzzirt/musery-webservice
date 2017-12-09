@@ -16,10 +16,9 @@ $(document).ready(function () {
     var charts = $(".charts p");
     var users = $(".users p");
 
-    $(".nav_button").click(function () {
+    $(".navigation-button").click(function () {
         var current = $(this);
         $(".underline").css("transition-duration", "0.3s");
-
 
         if (current.hasClass("songs")) {
             slideTo(songs);

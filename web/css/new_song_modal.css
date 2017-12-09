@@ -1,0 +1,75 @@
+.bem-modal-body {
+    padding: 0 2em 2em 2em;
+}
+
+.bem-modal-header {
+    border-bottom: none;
+}
+
+.bem-modal-body__cover {
+    height: 80%;
+    padding: 0;
+}
+
+.bem-button_theme_upload {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    height: 20%;
+    width: 100%;
+    background-color: cadetblue;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    -webkit-transition: background-color ease-in-out 150ms;
+    transition: background-color ease-in-out 150ms;
+}
+.bem-button_theme_upload:hover {
+    background-color: #7fb1b3;
+}
+.bem-button_theme_upload input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.bem-button_theme_upload label {
+    width: 100%;
+    height: 100%;
+    font-family: 'Material Icons';
+    color: #e6e6e6;
+}
+
+.bem-button_theme_upload label span:hover i.material-icons {
+    color: lightgray;
+}
+
+.bem-modal-body__image-preview {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../avatar-placeholder.png");
+    background-color: white;
+    background-size: cover;
+}
+
+.bem-modal-body__image-preview.js--no-default::after {
+    display: none;
+}
+
+.fadein, .fadeout {
+    opacity: 0;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+.fadein {
+    opacity: 1;
+}

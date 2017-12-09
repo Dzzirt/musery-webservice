@@ -188,6 +188,24 @@ class Song
 
     }
 
+    /**
+     * @return mixed
+     */
+    public function getImagePath()
+    {
+        return $this->imagePath;
+    }
+
+    /**
+     * @param mixed $imagePath
+     */
+    public function setImagePath($imagePath)
+    {
+        $this->imagePath = $imagePath;
+    }
+
+
+
     public function __toString()
     {
         return $this->id . $this->name . $this->author . $this->album;

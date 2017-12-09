@@ -1,0 +1,69 @@
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header bem-modal-header">
+                <div class="close">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    <button type="button" class="close bem-modal-header__button_ok" data-dismiss="modal"><span
+                                class="glyphicon glyphicon-ok"></span></button>
+                </div>
+
+            </div>
+            <div class="modal-body bem-modal-body">
+                <form id="create_song_form">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="col-12 bem-modal-body__cover">
+                                    <div class="bem-modal-body__image-preview"></div>
+                                    <div class="bem-button bem-button_theme_upload fadeout">
+                                        <label>
+                                            Upload
+                                            <input type="file" class="image-upload" accept="image/*"/>
+                                        </label>
+                                    </div>
+                            </div>
+                            <div class="col-12 rate reset">
+                                {% include "default/widget_rateme.html.twig" %}
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="col-form-label" for="formGroupExampleInput">Name</label>
+                                    <input type="text" name="name" class="form-control" id="formGroupExampleInput"
+                                           placeholder="Example input">
+                                </div>
+                                <div class="col-12">
+                                    <label class="col-form-label" for="formGroupExampleInput">Group</label>
+                                    <input type="text" name="group" class="form-control" id="formGroupExampleInput"
+                                           placeholder="Example input">
+                                </div>
+                                <div class="col-12">
+                                    <label class="col-form-label" for="formGroupExampleInput">Album</label>
+                                    <input type="text" name="album" class="form-control" id="formGroupExampleInput"
+                                           placeholder="Example input">
+                                </div>
+                                <div class="col-12">
+                                    <label for="validationDefault02">Tags</label>
+                                    <textarea class="form-control" name="tags" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Lyrics</label>
+                                <textarea class="form-control" name="lyrics" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

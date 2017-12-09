@@ -2,22 +2,15 @@
     margin: 0;
 }
 
-.toolbar {
-    padding: 1%;
-    background-color: #EEEEEF;
-    box-shadow: 0 4px 10px #d2d2d2;
+.toolbar button{
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
 }
 
-#custom-search-input {
-    height: 100%;
-    padding-left: 3%;
-    padding-right: 1%;
-    border: solid 1px #E4E4E4;
-    border-radius: 100px;
-    background-color: white;
-}
 
-#custom-search-input input{
+.toolbar input{
     padding-left: 0;
     padding-right: 0;
     border: 0;
@@ -26,30 +19,44 @@
     font-size: 1.3em;
 }
 
-#custom-search-input button{
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: #666666;
+.toolbar {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #EEEEEF;
+    box-shadow: 0 4px 10px #d2d2d2;
 }
 
-#custom-search-input button:hover {
+.input-container {
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 1%;
+    margin: 1em 0 1em 0;
+    border: solid 1px #E4E4E4;
+    border-radius: 100px;
+    background-color: white;
+}
+
+
+
+.input-container button:hover {
     color: black;
 }
 
-#custom-search-input .glyphicon-search{
-    font-size: 20px;
+.glyphicon-search{
+    font-size: 16px;
 }
 
-button {
+.menu {
+    margin: 1em 0 1em 0;
+}
+
+.menu button {
     display: inline;
     background: none;
     box-shadow: none;
     border: 0;
     font-size: 1.3em;
-}
-.menu {
-    height: 100%;
 }
 
 .underline {
